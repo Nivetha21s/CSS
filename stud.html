@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>CP</title>
+</head>
+<body>
+	<style type="text/css">
+		label{
+color: red;
+		}
+		form{
+			padding-left: 20px;
+		}
+	</style>
+	<script>
+function validate() {
+  alert("!!Submitted Successfully!!");
+}
+</script>
+<h1 align="left" style="color: red">Student Reg Form</h1>
+<form >
+	<label>Name:</label><br>
+	<input type="name" name=""/><br><br>
+	<label> Email ID:</label><br>
+	<input type="email" name=""/><br><br>
+	<label>Gender:</label><br>
+	<input type="radio" name="" value="male">Male
+	<input type="radio" name="" value="female">Female
+	<br><br></form>
+	<form action="/action_page.php">
+  <label for="birthday">Birthday:</label><br><br>
+  <input type="date" id="birthday" name="birthday">
+  <input type="submit"><br><br>
+  <label for="add">Address:</label><br><br>
+<textarea id="add" rows="5" cols="50">
+</textarea><br><br>
+<label> Mobile Number</label>
+<input type="num" name="" required="10"/><br><br>
+<input type="button" value="Submit" id="submit" onclick="validate()"/><br><br>
+</form>
+</body>
+</html>
